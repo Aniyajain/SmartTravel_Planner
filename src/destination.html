@@ -10,9 +10,31 @@
 <body class="bg-gray-200 min-h-screen">
 
     <!-- Nav bar -->
-     <nav class="bg-white shadow-md">
-
-     </nav>
+       <!-- Nav bar -->
+    <nav class="bg-white shadow-md">
+      <div class="max-w-6xl max-auto px-4">
+        <div class="flex justify-between items-center h-16">
+          <div class="text-xl font-bold text-blue-600">Smart Travel</div>
+          <div class="hidden md:flex space-x-6">
+            <a href="home.html" class="text-gray-700 hover:text-blue-600"
+              >Home</a
+            >
+            <a href="destination.html" class="text-gray-700 hover:text-blue-600"
+              >Destination
+            </a>
+            <a href="weather.html" class="text-gray-700 hover:text-blue-600"
+              >Weather</a
+            >
+            <a href="places.html" class="text-gray-700 hover:text-blue-600"
+              >Places</a
+            >
+            <a href="budget.html" class="text-gray-700 hover:text-blue-600"
+              >Budget</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
 
     <!-- Main Content -->
      <div class="flex flex-col items-center justify-center mt-20">
@@ -20,9 +42,11 @@
             <h1 class="text-2xl font-bold mb-4 text-sky-500">City Overview</h1>
             <p class="text-gray-700 mb-2">You Searched for : </p>
             <h2 id="cityName"  class="text-xl font-semibold text-sky-600 mb-4"></h2>
+            <div id="loading" class="mt-4 text-gray-700">Loading City Info....</div>
+            <div id="cityInfo" class=""></div>
         </div>
      </div>
 
-    
+    <script src="./JS/destination.js"></script>
 </body>
 </html>
